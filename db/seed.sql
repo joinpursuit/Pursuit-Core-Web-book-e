@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS booke;
 CREATE DATABASE booke;
 
 \c booke

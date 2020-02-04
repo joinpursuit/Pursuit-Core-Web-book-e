@@ -1,9 +1,9 @@
 const db = require("./db");
-const { QueryFile } = require('pg-promise')
+// const { QueryFile } = require('pg-promise')
 
 // db.none('CREATE DATABASE ')
 
-const seedfile = new QueryFile('./seed.sql')
+// const seedfile = new QueryFile('./seed.sql')
 
 let tables = {
     users: "users",
