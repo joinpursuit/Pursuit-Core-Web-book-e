@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const parser = require("body-parser");
 const cors = require("cors");
@@ -6,7 +7,7 @@ const usersController = require("./controllers/users");
 
 // instantiate express
 const app = express();
-const PORT = 8080
+const PORT = process.env.PORT || 8080 
 
 // Middleware configuration
 
