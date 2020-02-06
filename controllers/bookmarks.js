@@ -6,9 +6,13 @@ const db = require("../db/queries");
 
 // get all bookmarks
 router.get("/", (req, res) => {
-  db.getAllBookmarks().then(results => {
-    res.json(results)
-  })
+  db.getAllBookmarks()
+    .then(results => {
+      res.json(results)
+    })
+    .catch(err => {
+      console.log(err)
+    })
 });
 
 // get bookmark by title
